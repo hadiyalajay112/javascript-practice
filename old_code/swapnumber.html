@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label>1</label><br>
+        <input type="number" id="n1"><br>
+        <label>2</label><br>
+        <input type="number" id="n2"><br>
+        <label>3</label><br>
+        <input type="number" id="n3">
+        <br>
+        <br>
+        <button onclick="myfunction()">swap</button>
+        <br>
+        <br>
+        <label>1</label><br>
+        <input id="ans1"><br>
+        <label>2</label><br>
+        <input id="ans2"><br>
+        <label>3</label><br>
+        <input id="ans3"><br>
+    </div>
+</body>
+
+</html>
+<script>
+    function myfunction() {
+        var a1, a2, a3, swap;
+        a1 = document.getElementById('n1').value;
+        a2 = document.getElementById('n2').value;
+        a3 = document.getElementById('n3').value;
+        swap = a1 ;
+        a1 = a2 ;
+        a2 = a3 ;
+        a3 = swap ;
+        document.getElementById('ans1').value = a1;
+        document.getElementById('ans2').value = a2;
+        document.getElementById('ans3').value = a3;
+    }
+
+
+</script>

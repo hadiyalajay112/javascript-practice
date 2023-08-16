@@ -1,0 +1,39 @@
+<script>
+  // always use let and const keyword to declare variable ,  not use var keyword to declare variable
+  // the var keyword is the old way of declaring variables
+
+  // the const keyword are not re-declare and not re-assign
+
+  const birthYear = 1947;
+  //   birthYear = 1950; Error
+  console.log(birthYear);
+
+  //   const age;
+  //   age = 10;
+  //   console.log(age);   // re-assign Error
+
+  var job = "programmer";
+  job = "teacher";
+  console.log(job);
+
+  // difference between let and var
+  // let is block scoped
+  // let keyword is re-assign , not re-declare
+
+  // var is function scoped
+  // var keyword is re-assign, re-declare
+
+  let number = 5;
+  {
+    let number = 10;
+    console.log("number = ", number);
+  }
+  console.log("number = ", number);
+
+  var number1 = 5;
+  {
+    var number1 = 10;
+    console.log("number1 = ", number1);
+  }
+  console.log("number1 = ", number1);
+</script>

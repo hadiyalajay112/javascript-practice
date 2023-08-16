@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    // JavaScript Implicit Conversion
+
+    {
+        // Implicit Conversion to String -- ( automatic type conversion )
+        let result;
+        result = '3' + 2;
+        console.log(result);
+
+        result = '3' + true;
+        console.log(result);
+
+        result = '3' + undefined;
+        console.log(result);
+
+        result = '3' + null;
+        console.log(result);
+
+
+        // Implicit Conversion to Number 
+
+        let a;
+        a = '4' - '2';
+        console.log('a =', a);
+
+        a = '4' - 2;
+        console.log('a =', a);
+
+        a = '4' * 2;
+        console.log('a =', a);
+
+        a = '8' / 2;
+        console.log('a =', a);
+
+
+        // Non-numeric String Results to NaN
+
+        let b;
+        b = 'hello' - 'world';
+        console.log('b =', b);
+
+        b = '4' - 'Hello';
+        console.log('b =', b);
+
+
+        //  Implicit Boolean Conversion to Number
+
+        let c;
+        c = '4' - true;
+        console.log('c =', c);
+
+        c = 5 + true;
+        console.log('c =', c);
+
+        c = 5 - false;
+        console.log('c =', c);
+
+
+        // undefined used with number, boolean or null
+
+        let e;
+        e = 4 + undefined;
+        console.log('e =', e);
+
+        e = 4 - undefined;
+        console.log('e =', e);
+
+
+        // null Conversion to Number
+
+        let d;
+        d = 50 + null;
+        console.log('d =', d);
+
+        d = 60 - null;
+        console.log('d =', d);
+
+
+        // undefined used with number, boolean or null
+
+        f = true + undefined;
+        console.log('f =', f);
+
+        f = null + undefined;
+        console.log('f =', f);
+
+        f = 4 + undefined;
+        console.log('f =', f);
+
+        f = 4 - undefined;
+        console.log('f =', f);
+    }
+
+</script>

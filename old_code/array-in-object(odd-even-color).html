@@ -1,0 +1,51 @@
+<div id="name" style="padding: 15px;"></div>
+
+<script>
+  persons = [
+    {
+      firstname: "Paresh",
+      lastname: "Gami",
+    },
+    {
+      firstname: "Ajay",
+      lastname: "Hadiyal",
+    },
+    {
+      firstname: "Gautam",
+      lastname: "Hadiyal",
+    },
+    {
+      firstname: "Sanjay",
+      lastname: "Dalwadi",
+    },
+    {
+      firstname: "Devendra",
+      lastname: "Lakum",
+    },
+    {
+      firstname: "Pradip",
+      lastname: "Mori",
+    },
+    {
+      firstname: "Kuldip",
+      lastname: "Lakum",
+    },
+  ];
+
+  value = "";
+
+  for (let i = 0; i < persons.length; i++) {
+    index = i + 1;
+    if (i % 2 == 0) {
+      value =
+        value +
+        `<p style="background-color:#87CEEB">${index} .  ${persons[i].firstname} ${persons[i].lastname}</p>`;
+    } else {
+      value =
+        value +
+        `<p style="background-color:#FFE4B5">${index} . ${persons[i].firstname} ${persons[i].lastname}</p>`;
+    }
+  }
+
+  document.getElementById("name").innerHTML = value;
+</script>

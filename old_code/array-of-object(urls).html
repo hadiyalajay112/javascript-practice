@@ -1,0 +1,13 @@
+<script>
+    let urls = [{ url: "google.com" }, { url: "yahoo.com" }, { url: "apple.com" }];
+    urls.push({ url: "hp.com" });
+    k=1 ;
+    for (i = 0; i < urls.length; i++) {
+        console.log((i + 1) + "." + urls[i].url);
+    }
+
+    for (i = 0; i < urls.length; i++) {
+        console.log(`${k++}.${urls[i].url}`)
+    }
+
+</script>

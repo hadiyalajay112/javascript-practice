@@ -1,0 +1,109 @@
+<script>
+  // primitive data type --  7 ,
+  // primitive data type can only store in single value
+
+  // NNBBSSU
+
+  // N- Number
+  // N- Null
+  // B- Boolean
+  // B- Big int
+  // S- String
+  // S- Symbol
+  // U- Undefine
+
+  // non-primitive
+  // non-primitive data type can store multiple (collections of data) value
+
+  // object
+  // Array
+
+  // ----------------------------------------------
+
+  // Number
+  // integer ---> 54567 , floating numbers ---> 34.873437
+  // A number type can also be +Infinity, -Infinity, and NaN (not a number)
+
+  let sum = 3467.45678;
+  console.log(sum);
+
+  let number = -3e-5;
+  console.log(typeof number);
+  console.log(number);
+
+  let numberTwo = -798.865;
+  console.log(numberTwo);
+
+  let numberThree = 889e-5;
+  console.log(numberThree);
+  console.log(typeof numberThree);
+
+  let numberFour = 34 / 0;
+  console.log("numberFour: ", numberFour);
+  console.log(typeof numberFour);
+
+  let numberFive = "abc" / 0;
+  console.log("numberFour: ", numberFive);
+  console.log("numberFour: ", typeof numberFive);
+
+  // String
+
+  // Single quotes: 'Hello'
+  // Double quotes: "Hello"
+  // Backticks: `Hello`
+  // `${variable or expression}`
+
+  let studentName = "Ajay";
+  let personName = "Vipul";
+  console.log(`${studentName} and ${personName} is Angular Developer`);
+
+  // BigInt
+  let bigNumber = 900719925124740998n;
+  let bigNumberTwo = 1n;
+  console.log(bigNumber);
+
+  console.log(bigNumberTwo);
+  console.log(bigNumber + bigNumberTwo);
+  // console.log(bigNumber + 1);    Cannot mix BigInt and other types
+
+  // Boolean
+  let fullAge = true;
+  console.log(fullAge);
+  console.log(typeof fullAge);
+  console.log(typeof true);
+  // variable name holding a boolean value that holds the data-type and not the variable
+
+  let personfullAge = false;
+  console.log(personfullAge);
+  console.log(typeof personfullAge);
+
+  // Undefined
+  let children;
+  console.log(children);
+  console.log(typeof children);
+  // If a variable is declared but the value is not assigned, then the value of that variable will be undefined
+
+  // Null
+  let nullVariable = null;
+  console.log(nullVariable);
+  console.log(typeof nullVariable);
+  // null is a special value that represents empty or unknown value.
+  // Note: null is not the same as NULL or Null.
+
+  // Symbol
+  // Symbol is an immutable primitive value that is unique
+  const symbolValue = Symbol("hello");
+  console.log(symbolValue);
+  console.log(typeof symbolValue);
+
+  // redeclare
+  let age = 10;
+  console.log(age);
+  console.log(typeof age);
+  age = "hadiyal";
+  console.log(age);
+  console.log(typeof age);
+  let year;
+  console.log(year);
+  console.log(typeof year);
+</script>

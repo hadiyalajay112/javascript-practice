@@ -1,0 +1,44 @@
+<script>
+  let members = [
+    {
+      name: "Raj",
+      age: 19,
+      secretIdentity: "makwana@",
+      hobby: ["Shooting", "Martial Arts", "Riding Your Bike"],
+    },
+    {
+      name: "Jay",
+      age: 12,
+      secretIdentity: "makwama@1",
+      hobby: [
+        "Pool/Snooker",
+        "Golf",
+        "Archery",
+      ],
+    },
+    {
+      name: "Rudra",
+      age: 10,
+      secretIdentity: "lakum@",
+      hobby: [
+        "Surfing",
+        "Fencing",
+        "Skiing/Snowboarding",
+        "Swimming",
+        "Boxing",
+      ],
+    },
+  ];
+
+  for (let i = 0; i < members.length; i++) {
+    console.log(members[i].name);
+    console.log(members[i].age);
+    console.log(members[i].secretIdentity);
+    console.log("              ");
+
+    for (let j = 0; j < members[i].hobby.length; j++) {
+      console.log(members[i].hobby[j]);
+    }
+    console.log("--------------------");
+  }
+</script>

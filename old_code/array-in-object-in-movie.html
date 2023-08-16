@@ -1,0 +1,29 @@
+<div id="movieName"></div>
+<script>
+  movies = [
+    "Ant-Man",
+    "Avatar: The Way of Water film currently playing",
+    "Spider-Man: Homecoming.",
+    "Thor: Ragnarok.",
+    "Black Panther.",
+    "Captain America: Civil War.",
+    "Guardians of the Galaxy",
+    "Doctor Strange",
+    " WandaVision",
+    " The Incredible Hulk",
+    " WandaVision",
+    " Falcon and the Winter Soldier",
+    " Werewolf By Night",
+  ];
+  name = " ";
+  name = name + `<h2>Movies</h2>`;
+  for (let i = 0; i < movies.length; i++) {
+    name =
+      name +
+      `<ul>
+            <li>${movies[i]}</li>
+    </ul>`;
+  }
+
+  document.getElementById("movieName").innerHTML = name;
+</script>

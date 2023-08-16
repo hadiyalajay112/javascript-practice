@@ -1,0 +1,11 @@
+<script>
+  let avg = 0;
+  let sum = 0;
+  let len = 0;
+  let number = [10, 50, 97, 89, 76, 26, 54, 42, 37, 22, 1, 9];
+  len = number.length;
+  number.map((element) => {
+    avg = (sum += element) / len;
+  });
+  document.write(avg);
+</script>

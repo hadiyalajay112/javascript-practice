@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img-Array(A-D)</title>
+</head>
+
+<body>
+    <img src="apple.png" id="png" height="280" width="280"><br><br><br>
+    <button type="button" onclick="change()">Next</button>
+
+</body>
+</html>
+
+<script>
+    let image = ["apple.png", "banana.png", "cat.png", "dog.png"];
+    let index = 1;
+    function change() {
+        let i = document.getElementById("png");
+        png.src = image[index];
+        index++;
+        if(index==image.length){
+            index = 0;
+        }
+
+    }
+</script>

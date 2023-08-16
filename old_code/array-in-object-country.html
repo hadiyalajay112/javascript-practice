@@ -1,0 +1,62 @@
+<div id="list"></div>
+
+<!-- <ul>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+  </ul> -->
+
+<script>
+  list = [
+    {
+      country: "India",
+      state: [
+        "Assam",
+        "Bihar",
+        "Mumbai",
+        "Punjab",
+        "Madhya Pradesh",
+        "Orissa",
+        "Uttar Pradesh",
+        "West Bengal",
+      ],
+    },
+    {
+      country: "United States",
+      state: [
+        "Alabama",
+        " Alaska",
+        "Arizona",
+        "North Dakota",
+        "Vermont",
+        "Washington",
+        "Hawaii",
+        "Tennessee",
+      ],
+    },
+  ];
+
+  value = "<ul type=square>";
+
+  for (let i = 0; i < list.length; i++) {
+    value = value + `<li>${list[i].country}<ul type=disc>`;
+
+    for (let j = 0; j < list[i].state.length; j++) {
+      value = value + `<li>${list[i].state[j]}</li>`;
+    }
+    value = value + `</ul>`;
+  }
+  value = value + `</ul>`;
+
+  document.getElementById("list").innerHTML = value;
+</script>

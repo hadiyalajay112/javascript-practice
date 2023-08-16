@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+
+    // Convert to Number Explicitly
+
+    {
+        // string to number
+
+        let a;
+        a = Number('324');
+        console.log(a);
+
+        a = Number('5678e-2');
+        console.log(a);
+    }
+
+    {
+        // boolean to number
+        let b;
+        b = Number(false);
+        console.log(b);
+
+        b = Number(true);
+        console.log(b);
+
+        b = Number(null);
+        console.log(b);
+
+        b = Number('');
+        console.log(b);
+    }
+
+    {
+        let c;
+        c = Number('Hello');
+        console.log(c);
+
+        c = Number(undefined);
+        console.log(c);
+
+        c = Number(NaN);
+        console.log(c);
+
+    }
+
+
+    {
+
+        // string to Number
+
+        let d;
+        d = parseInt('4586.23');
+        console.log(d);
+
+        d = parseFloat('9789.236');
+        console.log(d);
+
+        d = Math.floor('143.2');
+        console.log(d);
+
+    }
+
+    {
+
+        // number to String
+        let e;
+        e = String(324);
+        console.log(e);
+
+        e = String(2 + 4);
+        console.log(e);
+
+        e = String(null);
+        console.log(e);
+
+        e = String(undefined);
+        console.log(e);
+
+        e = String(false);
+        console.log(e);
+
+        e = String(true);
+        console.log(e);
+
+        e = (789).toString();
+        console.log(e);
+
+        e = (false).toString();
+        console.log(e);
+
+        e = (true).toString();
+        console.log(e);
+
+        e = (146).toString();
+        console.log(e);
+    }
+
+    {
+
+        // others data to Boolean
+        let result;
+        result = Boolean(321);
+        console.log(result);
+
+        result = Boolean(' ');
+        console.log(result);
+
+        result = Boolean(true);
+        console.log(result);
+
+        result = Boolean('hello');
+        console.log(result);
+
+        // --------
+        result = Boolean(undefined);
+        console.log(result);
+
+        result = Boolean(null);
+        console.log(result);
+
+        result = Boolean(NaN);
+        console.log(result);
+
+        result = Boolean(0);
+        console.log(result);
+
+        result = Boolean(false);
+        console.log(result);
+
+        result = Boolean('');
+        console.log(result);
+    }
+
+</script>

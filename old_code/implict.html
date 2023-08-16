@@ -1,0 +1,27 @@
+<script>
+
+   // numeric string used with + gives string type
+   let a = 3 + '2 ';
+   console.log(a);
+   let b = 3 + "true";
+   console.log(b);
+   let c = "undefined" + "2";
+   console.log(c);
+
+
+   // numeric string used with - , / , * results number type
+
+   let result;
+
+   result = '4' - '2';
+   console.log(result); // 2
+
+   result = '4' - 2;
+   console.log(result); // 2
+
+   result = '4' * 2;
+   console.log(result); // 8
+
+   result = '4' / 2;
+   console.log(result); // 2
+</script>

@@ -1,0 +1,66 @@
+<script>
+    person = [
+        {
+            name: "Paresh",
+            age: "32",
+            child: [{
+                name: "Ruhi",
+                age: "8"
+            },
+            {
+                name: "xyz",
+                age: "5"
+            }]
+        },
+        {
+            name: "Ranjit",
+            age: "35",
+            child: [{
+                name: "Syam",
+                age: "9"
+            },
+            {
+                name: "Riddhi",
+                age: "7"
+            },
+            ]
+        },
+        {
+            name: "Mahesh",
+            age: "39",
+            child: [{
+                name: "Aaruna",
+                age: "12"
+            },
+            {
+                name: "Aarati",
+                age: "10"
+            },
+            {
+                name: "Harshad",
+                age: "8"
+            },
+            {
+                name: "Uttam",
+                age: "6"
+            }
+            ]
+        }
+    ];
+
+    // console.log(person[0].child[1].name);
+    // console.log(person[2].child.length);
+
+    for (let a in person) {
+        console.log("Father's Name : ", person[a].name);
+        console.log("age : ", person[a].age);
+
+        for (let b in person[a].child) {
+            console.log((parseInt(b) + 1) + " . " + person[a].child[b].name);
+            console.log('age :-', person[a].child[b].age);
+            console.log('   ')
+        }
+
+        console.log("-------");
+    }
+</script>

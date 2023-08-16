@@ -1,0 +1,27 @@
+<script>
+    // program showing block-scoped concept
+    // global variable
+    let a = 'Hello';
+    function greet() {
+
+        // local variable
+        let b = 'World';
+        document.write(a + ' ' + b);
+        document.write("<br>");
+
+        if (b == 'World') {
+
+            // block-scoped variable
+            let c = 'hello';
+
+            document.write(a + ' ' + b + ' ' + c);
+            document.write("<br>");
+        }
+
+        // variable c cannot be accessed here
+        document.write(a + ' ' + b + ' ' + c);
+        document.write("<br>");
+    }
+
+    greet();
+</script>

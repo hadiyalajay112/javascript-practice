@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="apple.png" id="png" height="250" width="250">
+
+</body>
+
+</html>
+<script>
+    let image = ["apple.png", "banana.png", "calamansi.png", "damson.png"];
+    index = 1;
+    window.setInterval(change, 3000);
+
+    function change {
+        i = document.getElementById("png");
+        png.src = image[index];
+        index++;
+        if (index == image.length) {
+            index = 0;
+        }
+    }
+</script>

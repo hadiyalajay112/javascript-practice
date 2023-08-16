@@ -1,0 +1,58 @@
+
+<input type="text" id="box" oninput="search()" />
+
+<div id="demo" style="margin: 5px; padding: 5px"></div>
+
+<script>
+  let categories = [
+    {
+      id: 1,
+      name: "Account",
+    },
+    {
+      id: 2,
+      name: "Finance",
+    },
+    {
+      id: 3,
+      name: "Delivery",
+    },
+    {
+      id: 4,
+      name: "Spolit Product",
+    },
+    {
+      id: 5,
+      name: "Wrong Order",
+    },
+    {
+      id: 3,
+      name: "Wrong",
+    },
+  ];
+
+  catogiesName = "<ul>";
+  for (let i = 0; i < categories.length; i++) {
+    catogiesName = catogiesName + `<li>${categories[i].name}</li>`;
+  }
+  catogiesName += "<ul>";
+  document.getElementById("demo").innerHTML = catogiesName;
+
+
+
+  function search() {
+    searchValue = document.getElementById("box").value.toLocaleLowerCase().trim();
+    const newData = categories.filter((x) => x.name.toLocaleLowerCase().includes(searchValue));
+    console.log(newData);
+
+    catogiesName = "<ul>";
+    for (let i = 0; i < newData.length; i++) {
+      catogiesName = catogiesName + `<li>${newData[i].name}</li>`;
+    }
+    catogiesName += "<ul>";
+    document.getElementById("demo").innerHTML = catogiesName;
+    
+  }
+
+  // search();
+</script>

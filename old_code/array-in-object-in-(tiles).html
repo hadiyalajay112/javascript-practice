@@ -1,0 +1,55 @@
+<script>
+    tiles = [
+        {
+            type: "Floor-tiles",
+            variety: [
+                {
+                    size: "12 * 12",
+                    color: ["white", "black", "red"],
+                    price: "230 per box"
+                },
+                {
+                    size: "24 * 18",
+                    color: ["white", "black", "red"],
+                    price: "240 per box"
+                }
+            ]
+        },
+        {
+            type: "Wall-tiles",
+            variety: [
+                {
+                    size: "12 * 12",
+                    color: ["white", "black", "red"],
+                    price: "300 per box"
+                },
+                {
+                    size: "12 * 18",
+                    color: ["white", "black", "red"],
+                    price: "350 per box"
+                }
+            ]
+        }
+    ];
+
+    for (let a in tiles) {
+        console.log("-->", tiles[a].type);
+        console.log("                   ");
+
+        for (let b in tiles[a].variety) {
+            console.log("size :-", tiles[a].variety[b].size);
+            console.log("price :-", tiles[a].variety[b].price);
+
+            for (let c in tiles[a].variety[b].color) {
+                console.log("-", tiles[a].variety[b].color[c]);
+            }
+            console.log("                   ");
+        }
+        console.log("                   ");
+    }
+</script>
+
+
+
+
+

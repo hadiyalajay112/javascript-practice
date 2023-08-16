@@ -1,0 +1,56 @@
+<div id="table"></div>
+<script>
+  persons = [
+    {
+      firstname: "Paresh",
+      lastname: "Gami",
+    },
+    {
+      firstname: "Ajay",
+      lastname: "Hadiyal",
+    },
+    {
+      firstname: "Devendra",
+      lastname: "Lakum",
+    },
+    {
+      firstname: "Gautam",
+      lastname: "Hadiyal",
+    },
+    {
+      firstname: "Sanjay",
+      lastname: "Dalwadi",
+    },
+
+    {
+      firstname: "Pradip",
+      lastname: "Mori",
+    },
+    {
+      firstname: "Kuldip",
+      lastname: "Lakum",
+    },
+  ];
+
+  value = "";
+  value = `<table border=1>
+  <tr>
+    <th>#</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>`;
+
+
+  for (let i = 0; i < persons.length; i++) {
+    value =
+      value +
+      `<tr>
+      <td>${i + 1}</td>
+      <td>${persons[i].firstname}</td>
+      <td>${persons[i].lastname}</td>
+      </tr>`;
+  }
+
+  `</table>`;
+  document.getElementById("table").innerHTML = value;
+</script>

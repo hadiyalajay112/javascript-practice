@@ -1,0 +1,123 @@
+<script>
+  //   assignment operator
+  //   arithmetic operator
+  //   comparison operator
+  //   logical operator
+  //   bitwise operator
+  //   string operator
+  //   ternary operator
+
+  // * assignment operator
+  const nowage = 2040;
+
+  let manAge = nowage - 1990;
+  console.log("Man Age:", manAge);
+
+  let womenAge = nowage - 2000;
+  console.log("Women Age:", womenAge);
+
+  // =	Assignment operator	a = 7;
+  // 7
+
+  let a = 7;
+  console.log("a =", a);
+
+  // +=	Addition assignment	a += 5;
+  a = a + 5;
+  console.log("a =", a);
+
+  // -=	Subtraction Assignment	a -= 2;
+  a = a - 2;
+  console.log("a =", a);
+
+  // *=	Multiplication Assignment	a *= 3;
+  a = a * 3;
+  console.log("a =", a);
+
+  // /=	Division Assignment	a /= 2;
+  a = a / 2;
+  console.log("a =", a);
+
+  // **=	Exponentiation Assignment	a **= 2;
+  a = a ** 2;
+  console.log("a =", a);
+
+  // %=	Remainder Assignment	a %= 2;
+  a = a % 2;
+  console.log("a =", a);
+
+  // *  arithmetic operator
+  let x = 10;
+  let y = 5;
+
+  let sum = x + y;
+  console.log(sum);
+
+  let minus = x - y;
+  console.log(minus);
+
+  let multiplication = x * y;
+  console.log(multiplication);
+
+  const plusPlus = x++; // postfix
+  // x = x + 1;
+  console.log(plusPlus);
+
+  const postplusPlus = ++x; // prefix
+  // x = x + 1;
+  console.log(plusPlus);
+
+  const minusMinus = y--; // postfix
+  // y = y - 1;
+  console.log(minusMinus);
+
+  // * Comparison operator
+  // equal operator
+
+  console.log("equal operator", 2 == 2);
+  console.log("equal operator", 2 == 5);
+  console.log("equal operator", 2 == "2");
+
+  // not equal operator
+  console.log("not equal operator", 3 != 2);
+  console.log("not equal operator", 3 != 3);
+  console.log("not equal operator", "hello" != "Hello");
+
+  // strict equal operator
+  console.log("strict equal operator", 2 === 2);
+  console.log("strict equal operator", 2 === "2");
+  console.log("strict equal operator", 2 === 5);
+
+  // strict not equal operator
+  console.log("strict not equal operator", 2 !== "2");
+  console.log("strict not equal operator", 2 !== 2);
+  console.log("strict not equal operator", 5 !== 2);
+
+  // *Logical operator
+
+  // logical AND
+  console.log(true && true);
+  console.log(true && false);
+  console.log(false && false);
+
+  // logical OR
+  console.log(3 > 2 || 5 <= 5);
+  console.log(true || true);
+  console.log(false || false);
+
+  // logical NOT
+  console.log(!true);
+  console.log(!false);
+
+  //   ternary ( conditional) operator
+
+  let sentence =
+    50 < 30 ? "This is sentence is right" : "This is sentence is wrong";
+  console.log(sentence);
+
+  // concatenate
+  let firstName = "Hadiyal";
+  let lastName = "Ajay";
+  console.log("Name:", firstName + " " + lastName);
+  console.log(typeof lastName);
+</script>

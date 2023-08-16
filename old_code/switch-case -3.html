@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+</body>
+
+</html>
+<script>
+    let a = 1;
+    switch (a) {
+        case 1:
+            text = 'Yesterday is History ';
+            break;
+
+        case 2:
+            text = 'Today is Git';
+            break;
+
+        case 3:
+            text = 'Tommorow is Mystery';
+            break;
+        default:
+            text = "Enter a valid number";
+            break;
+    }
+    document.getElementById('demo').innerHTML = text;
+    document.write(text);
+</script>
