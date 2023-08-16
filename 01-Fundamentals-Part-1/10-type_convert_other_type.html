@@ -1,0 +1,43 @@
+<script>
+  //   ** type conversion
+
+  let birthYear = "1947";
+  let currentYear = 3;
+  let name = "ajay";
+
+  console.log("birth Year - String:", birthYear);
+  console.log("current Year - Number:", currentYear);
+
+  console.log(birthYear + currentYear); // string
+
+  //   original value  not change
+  console.log(Number("1947") + currentYear); // Number
+  console.log("birth Year:", birthYear);
+
+  // javascript string not convert to number
+  console.log(typeof birthYear); //string
+  console.log(typeof currentYear); //number
+
+  console.log(typeof name);
+  console.log(Number(name));
+  console.log(Number(name) + currentYear);
+  console.log(typeof Number(name));
+
+  //   string to convert number
+
+  console.log(currentYear);
+  console.log(typeof currentYear);
+  console.log(String(currentYear));
+  console.log(typeof String(currentYear));
+
+  //   javascript only three convert type
+  // to a number (direct convert)
+  // to a string (direct convert)
+  // to a boolean (direct not convert -- special way )
+
+  //   --> not convert
+  //   undefined
+  //   null
+
+  //   ** type coercion
+</script>
