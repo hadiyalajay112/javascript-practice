@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .emoji-style {
+        font-size: 100px;
+        padding: 10px;
+        display: none;
+      }
+
+      .d-flex {
+        display: flex;
+      }
+
+      .p {
+        padding: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button type="button" class="p" onclick="emojiDisplay('happy')">Happy</button>
+      <button type="button" class="p" onclick="emojiDisplay('angry')"> Angry</button>
+      <button type="button" class="p" onclick="emojiDisplay('celebrate')">Celebrate</button>
+      <button type="button" class="p" onclick="emojiDisplay('sick')">Sick</button>
+      <button type="button" class="p" onclick="emojiDisplay('silent')"> Silent</button> 
+    </div>
+
+    <div class="d-flex">
+      <div id="happy" class="emoji-style">😀</div>
+
+      <div id="angry" class="emoji-style">😡</div>
+
+      <div id="celebrate" class="emoji-style">🥳</div>
+
+      <div id="sick" class="emoji-style">😷</div>
+
+      <div id="silent" class="emoji-style">🤐</div> 
+    </div>
+    
+  </body>
+</html>
+<script>
+  emoji =['happy','angry','celebrate','sick','silent'];
+  
+  function emojiDisplay(id) {
+      emoji.forEach(e => document.getElementById(e).style.display="none");
+      document.getElementById(id).style.display="block"; 
+  }
+</script>
