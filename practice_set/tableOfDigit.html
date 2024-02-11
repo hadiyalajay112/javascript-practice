@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="digit">
+    <button type="button" onclick="maketable()">Submit</button>
+
+    <div id="dynamictable"></div>
+</body>
+
+</html>
+<script>
+    function maketable() {
+        table = document.getElementById('digit').value;
+        str = ''
+
+        for (let i = 1; i <= 10; i++) {
+            result = `${table} * ${i} = ${table * i}`;
+            str += `<p>${result}</p>`;
+        }
+
+        document.getElementById('dynamictable').innerHTML = str;
+    }
+</script>
