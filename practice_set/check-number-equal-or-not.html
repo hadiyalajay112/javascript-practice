@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="number" id="first"><br><br>
+        <input type="number" id="second"><br><br>
+        <button type="button" onclick="equalNumber()">Submit</button>
+        <div id="checkNumber"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    function equalNumber() {
+
+        numberOne = document.getElementById('first').value;
+        numberTwo = document.getElementById('second').value;
+
+        if (numberOne === numberTwo) {
+            result = `<h3>Numbers are equals </h3>`;
+            document.getElementById('checkNumber').innerHTML = result;
+        }
+        else {
+            result = `<h3>Numbers are not equals </h3>`;
+            document.getElementById('checkNumber').innerHTML = result;
+        }
+    }
+</script>

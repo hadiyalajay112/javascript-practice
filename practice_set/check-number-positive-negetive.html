@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="digit">
+    <button type="button" onclick="checkNumber()">Submit</button>
+    <div id="finalResult"></div>
+</body>
+
+</html>
+<script>
+    function checkNumber() {
+        findDigit = document.getElementById('digit').value;
+        if (findDigit > 0) {
+            result = `<h3> Positive Number </h3>`
+            document.getElementById('finalResult').innerHTML= result;
+        }
+        else if (findDigit < 0) {
+            result = `<h3> Negetive Number </h3>`;
+            document.getElementById('finalResult').innerHTML= result;
+        }
+        else {
+            result = `<h3> Zero </h3>`
+            document.getElementById('finalResult').innerHTML= result;
+        }
+    }
+</script>

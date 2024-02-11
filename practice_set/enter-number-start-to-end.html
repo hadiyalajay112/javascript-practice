@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="start"><br><br>
+    <input type="number" id="end"><br><br>
+    <button type="button" onclick="printNumber()">Submit</button>
+
+    <div id="startToEnd"></div>
+</body>
+
+</html>
+<script>
+    function printNumber() {
+        result = '';
+        noOne = document.getElementById('start').value
+        noTwo = document.getElementById('end').value
+
+        for (let i = noOne; i <= noTwo; i++) {
+            result += `<p> ${i} </p>`;
+            document.getElementById('startToEnd').innerHTML = result;
+        }
+    }
+</script>

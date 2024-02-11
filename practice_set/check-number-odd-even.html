@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="digit">
+    <button type="button" onclick="checkNumber()">Submit</button>
+    <div >
+        <h3 id="checkedNumber"></h3>
+    </div>
+</body>
+
+</html>
+<script>
+    function checkNumber() {
+        no = document.getElementById('digit').value;
+        if (no % 2 === 0) {
+            document.getElementById('checkedNumber').innerHTML = 'Even Number';
+        }
+        else {
+            document.getElementById('checkedNumber').innerHTML = 'Odd Number';
+        }
+
+    }
+</script>
