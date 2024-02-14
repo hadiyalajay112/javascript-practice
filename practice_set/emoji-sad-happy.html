@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .emoji {
+            font-size: 100px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="emojiHide()">Change</button>
+
+    <div id="happy" class="emoji">😀</div>
+    <div id="angry" class="emoji">😡</div>
+
+</body>
+
+</html>
+<script>
+    let isTrue = true;
+    function emojiHide() {
+        if (isTrue == true) {
+            document.getElementById('happy').style.display = "block";
+            document.getElementById('angry').style.display = "none";
+        }
+        else {
+            document.getElementById('happy').style.display = "none";
+            document.getElementById('angry').style.display = "block";
+        }
+        isTrue = !isTrue;
+    }
+</script>
