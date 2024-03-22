@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .otp-box {
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        padding: 5px;
+        max-width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="displayOtp" class="otp-box"></h1>
+    </div>
+  </body>
+</html>
+<script>
+  function otpCreate() {
+    otp = "";
+    length = 6;
+    for (let i = 0; i < length; i++) {
+      otp += Math.floor(Math.random() * 10).toString();
+    }
+    console.log(otp);
+    document.getElementById("displayOtp").innerHTML = otp;
+  }
+
+  otpCreate();
+</script>
