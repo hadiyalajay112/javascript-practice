@@ -1,0 +1,39 @@
+<script>
+  let nameList = ["Ajay", "Devrang", 112, "Jaydip", 223, 334, "Dhaval"];
+  let num = [1, 902, 34, 77, 99, 22, 48, 3, 4, 5, 6, 7, 8, 112, 9, 88, 10];
+
+  //   at methods
+  for (let i = 0; i < nameList.length; i++) {
+    console.log(`${i} =>`, nameList.at(i));
+  }
+
+  //   push method => (Add element to the end)
+  nameList.push("Pradip");
+  console.log(nameList);
+
+  //   pop method => (remove last element)
+  nameList.pop();
+  console.log(nameList);
+
+  //   shift method => (remove first element)
+  nameList.shift();
+  console.log(nameList);
+
+  //   unshift method => (add first element)
+  nameList.unshift("Eagle");
+  console.log(nameList);
+
+  // reverse => sort in descending order
+  nameList.reverse();
+  console.log(nameList);
+
+  num.reverse();
+  console.log(num);
+
+  //   fill method => (fill every element)
+  nameList.fill("$");
+  console.log(nameList);
+
+  // num.sort();
+  // console.log(num);
+</script>
