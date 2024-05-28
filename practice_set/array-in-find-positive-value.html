@@ -1,0 +1,21 @@
+<script>
+  let array = [1, -5, 10, -3, 12, -9, 5, 90, 0, 1, -6, 89];
+  let positiveValue = [];
+
+  for (let i = 0; i < array.length; i++) {
+    value = array[i];
+    if (value >= 0) {
+      positiveValue.push(value);
+    }
+  }
+
+  // --- Or
+
+  // array.forEach((x) => {
+  //   if (x >= 0) {
+  //     positiveValue.push(x);
+  //   }
+  // });
+  
+  console.log(positiveValue);
+</script>
