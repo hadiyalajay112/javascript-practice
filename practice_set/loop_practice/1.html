@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let showRoomData = [
+        {
+          id: 1,
+          model: "Swift",
+          price: 6.49,
+        },
+        {
+          id: 2,
+          model: "Kia",
+          price: 6,
+        },
+        {
+          id: 3,
+          model: "Ertiga",
+          price: 8.69,
+        },
+        {
+          id: 4,
+          model: "Creta",
+          price: 10.24,
+        },
+        {
+          id: 5,
+          model: "Brezza",
+          price: 8.34,
+        },
+      ];
+
+      //   for loop
+      for (let i = 0; i < showRoomData.length; i++) {
+        console.log(showRoomData[i].model);
+      }
+
+      //   for Each
+      showRoomData.forEach((x) => {
+        data = x;
+        console.log(`Price : ${data.price}`);
+      });
+
+      //   while loop
+      let j = 0;
+      while (j < showRoomData.length) {
+        console.log(showRoomData[j]);
+        j++;
+      }
+
+      //   do while
+      let k = 0;
+      do {
+        console.log(showRoomData[k]);
+        k++;
+      } while (k < showRoomData.length);
+
+      //   for off loop
+      for (let data of showRoomData) {
+        console.log(data.id);
+      }
+    </script>
+  </body>
+</html>
